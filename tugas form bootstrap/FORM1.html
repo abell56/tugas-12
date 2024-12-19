@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>Form</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    * {
+      background-color: bisque;
+    }
+
+    @media only screen and (max-width:1024px) {
+      * {
+        background-color: rgb(253, 168, 183);
+      }
+    }
+
+    @media only screen and (max-width:768px) {
+      * {
+        background-color: chartreuse;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <form>
+    <div class="form-group row">
+      <label for="Name" class="col-4 col-form-label">Nama Lengkap:</label>
+      <div class="col-5">
+        <input id="Name" name="Name" placeholder="Masukkan Nama Anda" type="text" required="required"
+          class="form-control">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="Lahir" class="col-4 col-form-label">Tempat Lahir:</label>
+      <div class="col-5">
+        <input id="Lahir" name="Lahir" placeholder="Masukkan Tempat Lahir" type="text" class="form-control"
+          required="required">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="tanggallahir" class="col-4 col-form-label">Tanggal Lahir</label>
+      <div class="col-3">
+        <input id="tanggallahir" name="tanggallahir" type="date" class="form-control" required="required">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-4">Gender:</label>
+      <div class="col-5">
+        <div class="custom-control custom-radio custom-control-inline">
+          <input name="gender" id="gender_0" type="radio" class="custom-control-input" value="laki" required="required">
+          <label for="gender_0" class="custom-control-label">Laki-Laki</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input name="gender" id="gender_1" type="radio" class="custom-control-input" value="perempuan"
+            required="required">
+          <label for="gender_1" class="custom-control-label">Perempuan</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="email" class="col-4 col-form-label">Email:</label>
+      <div class="col-5">
+        <input id="email" name="email" placeholder="Masukkan Email Anda" type="email" class="form-control"
+          required="required">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="status" class="col-4 col-form-label">Status Peserta:</label>
+      <div class="col-5">
+        <select id="status" name="status" class="custom-select" required="required">
+          <option value="mahasiswa">Mahasiswa</option>
+          <option value="kerja">Kerja</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="offset-4 col-8">
+        <button name="submit" type="submit" class="btn btn-primary">Daftar</button>
+      </div>
+    </div>
+  </form>
+</body>
+
+</html>
